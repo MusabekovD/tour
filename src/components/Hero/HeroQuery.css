@@ -1,0 +1,28 @@
+@media (max-width: 991px) {
+  .hero-3 {
+    background-image: url("../../assets/hero/dubai-medium.jpg");
+  }
+  .hero-2 {
+    background-image: url("../../assets/hero/antaliya-md.jpg");
+  }
+  .hero__info {
+    padding: 30px 30px;
+    border-radius: 61px;
+    width: 90%;
+  }
+}
+@media (max-width: 768px) {
+  .hero__info {
+    margin-top: -30px;
+    padding: 10px 10px;
+    border-radius: 31px;
+    width: 50%;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  
+
+}
+@media (max-width: 450px) {
+}

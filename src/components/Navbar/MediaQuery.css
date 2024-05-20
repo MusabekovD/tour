@@ -13,6 +13,8 @@
         display: block;
         left: -100%;
         transition: .4s linear;
+        height: 100%;
+        z-index: 1000;
     }
     .mobileNavbar.active {
         left: 0;
