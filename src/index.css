@@ -53,6 +53,7 @@ li {
   overflow: hidden;
   background-color: #22b3c1;
   color: #fff;
+  cursor: pointer;
 }
 
 .header__text {
