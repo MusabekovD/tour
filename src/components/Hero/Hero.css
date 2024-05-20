@@ -1,0 +1,91 @@
+.hero {
+    width: 100%;
+    height: 100vh;
+    background-image: url("../../assets/hero/istanbul.jpg");
+    background-position: bottom bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hero__main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 10%;
+    gap: 100px;
+}
+
+.hero__text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.hero__text-subtitle {
+    font-weight: 500;
+    font-size: 20px;
+    color: #fff;
+}
+
+.hero__text-title {
+    font-size: 50px;
+    color: #ffff;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.hero__text-btn {}
+
+.hero__info {
+    background-color: #fff;
+    color: #000;
+    padding: 60px 60px;
+    border-radius: 61px;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hero__info-flex {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.hero__population {}
+
+.hero__icon {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    border: 1px solid;
+    border-radius: 50%;
+    border-color: #fff;
+}
+
+.hero__icon a {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+}
+
+.hero__txt {
+    font-size: 15px;
+    color: #000;
+    font-weight: 400;
+}
+
+.hero__text > span {
+    font-size: 20px;
+    color: #22b3c1;
+    font-weight: 700;
+    line-height: 28px;
+}
