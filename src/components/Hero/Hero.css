@@ -71,11 +71,13 @@
 
 .hero__icon {
   position: relative;
-  width: 40px;
-  height: 40px;
+  width: 70px;
+  height: 70px;
   border: 1px solid;
   border-radius: 50%;
-  border-color: #fff;
+  border-color: #22b3c1;
+  color: #22b3c1;
+  font-size: 30px;
 }
 
 .hero__icon a {
@@ -90,12 +92,12 @@
 }
 
 .hero__txt {
-  font-size: 15px;
+  font-size: 22px;
   color: #000;
-  font-weight: 400;
+  font-weight: 600;
 }
 
-.hero__text > span {
+span.hero__txt-span {
   font-size: 20px;
   color: #22b3c1;
   font-weight: 700;

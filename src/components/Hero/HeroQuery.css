@@ -1,3 +1,15 @@
+@media (max-width: 1200px) {
+  .hero__info {
+    margin-top: -30px;
+    padding: 10px 10px;
+    border-radius: 31px;
+    width: 50%;
+    flex-direction: column;
+    gap: 20px;
+    background-color: rgb(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+  }
+}
 @media (max-width: 991px) {
   .hero-3 {
     background-image: url("../../assets/hero/dubai-medium.jpg");
@@ -10,6 +22,16 @@
     border-radius: 61px;
     width: 90%;
   }
+  .hero__info {
+    margin-top: -30px;
+    padding: 10px 10px;
+    border-radius: 31px;
+    width: 50%;
+    flex-direction: column;
+    gap: 20px;
+    background-color: rgb(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+  }
 }
 @media (max-width: 768px) {
   .hero__info {
@@ -19,10 +41,27 @@
     width: 50%;
     flex-direction: column;
     gap: 20px;
+    background-color: rgb(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
   }
-
-  
-
 }
 @media (max-width: 450px) {
+  .hero__info {
+    background-color: rgb(255, 255, 255, 0.2);
+    padding: 30px 10px;
+    border-radius: 20px;
+    width: 80%;
+    backdrop-filter: blur(10px);
+  }
+  .hero__text-subtitle {
+    font-size: 18px;
+    text-align: center;
+  }
+  
+  .hero__text-title {
+    font-size: 50px;
+    color: #ffff;
+    font-weight: 700;
+    margin-bottom: 30px;
+  }
 }

@@ -46,7 +46,7 @@ const Navbar = () => {
             </li>
             <li className="nav__icons-item nav__list-item ">
               <a href="#">
-                <FaTelegramPlane />
+                <FaTelegramPlane className="social_icon"/>
               </a>
             </li>
             <li className="nav__icons-item nav__list-item ">

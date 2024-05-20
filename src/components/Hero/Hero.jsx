@@ -146,7 +146,8 @@ const Hero = () => {
                       </a>
                     </div>
                     <div className="hero__txt">
-                      Population: <br /> <span>8.66 M</span>
+                      Population: <br />{" "}
+                      <span className="hero__txt-span">8.66 M</span>
                     </div>
                   </div>
                   <div className="hero__territory hero__info-flex">
