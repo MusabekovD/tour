@@ -1,0 +1,18 @@
+.navbar {
+    padding: 70px 0;
+    background-color: #22b3c1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;  
+}
+
+.logo {
+}
+.nav__list {
+}
+.nav__list-item {
+}
+.nav__icons {
+}
+.nav__icons-item {
+}
