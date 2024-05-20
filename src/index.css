@@ -27,5 +27,8 @@ a {
 }
 li {
     text-decoration: none;
-
+    list-style: none;
+}
+.social_icon{
+    font-size: 20px;
 }

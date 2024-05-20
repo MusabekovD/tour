@@ -1,0 +1,23 @@
+
+@media (max-width:991px) {
+    
+}
+@media (max-width:768px) {
+    .navbar__toggle{
+        display: block;
+    }
+    .nav__list{
+        display: none;
+    }
+    .mobileNavbar{
+        display: block;
+        left: -100%;
+        transition: .4s linear;
+    }
+    .mobileNavbar.active {
+        left: 0;
+    }
+}
+@media (max-width:450px) {
+    
+}
