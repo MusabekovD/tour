@@ -23,7 +23,9 @@ import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper core and required modules
 import { Navigation, Pagination } from "swiper/modules";
-
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/pagination';
 const Offer = () => {
   // Swiper instance reference
   let swiperInstance = null;

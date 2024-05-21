@@ -5,14 +5,14 @@ import "./HeroQuery.css";
 import { FaUser } from "react-icons/fa";
 import { FaEarthAfrica } from "react-icons/fa6";
 import { IoMdHome } from "react-icons/io";
-import istanbul from "../../assets/hero/istanbul.jpg";
-import antalya from "../../assets/hero/antalya.jpg";
-import dubai from "../../assets/hero/dubai.jpg";
 // import Swiper JS
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination, Scrollbar, A11y } from "swiper/modules";
+import { Navigation, Pagination, Scrollbar, A11y, Autoplay } from "swiper/modules";
+
+
 // Import Swiper styles
 import "swiper/css";
+import "swiper/css/autoplay";
 const Hero = () => {
   return (
     <>
@@ -21,9 +21,10 @@ const Hero = () => {
         spaceBetween={10}
         slidesPerView={1}
         loop={true}
-        navigation
         pagination={{ clickable: true }}
         scrollbar={{ draggable: true }}
+        Autoplay = {true}
+        className="hero"
       >
         <SwiperSlide>
           <section className="hero hero-1" id="hero">

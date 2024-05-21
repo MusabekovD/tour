@@ -82,3 +82,10 @@ li {
     display: flex;
     align-items: center;
 }
+.hero .swiper-pagination-bullet{
+  width: 100px;
+  height: 8px;
+  border-radius: 0%;
+  background-color: #22b3c1;
+  border-radius: 10px;
+}
