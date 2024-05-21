@@ -1,0 +1,24 @@
+.test {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+}
+.image {
+  flex: 1;
+  background-color: lightgray; /* Just for visibility */
+  margin: 5px;
+  height: 100px; /* Assuming a fixed height for the images */
+  position: relative;
+  transition: flex 0.3s ease;
+}
+.image.collapsed {
+  flex: 0 0 200px;
+}
+
+button {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  padding: 5px 10px;
+}

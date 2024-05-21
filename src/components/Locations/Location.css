@@ -1,21 +1,26 @@
 .locations {
     padding: 50px 0;
 }
-
+.location__img {
+    position: relative;
+    flex: 1;
+    margin: 20px;
+    height: 200px;
+    transition:  flex 0.3s ease;
+}
 .location__slider-wrapper {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: stretch;
     gap: 20px;
 }
+
 .location__slider {
     margin-top: 30px;
-    transition: .5s linear;
 }
-.location__img {
-    position: relative;
-    width: 600px;
-    height: 100%;
+
+.location__img.collapsed {
+    flex: 0  0 200px;
 }
 .location__img img {
     width: 100%;
@@ -41,10 +46,3 @@
     color: #fff;
 }
 
-.location__slider.active .location__img {
-    width: 100px;
-    height: 300px;
-}
-.location__slider.active .location__img img {
-    width: 100%;
-}
