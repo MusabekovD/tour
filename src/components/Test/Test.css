@@ -1,24 +1,61 @@
-.test {
-  margin-top: 100px;
+.best__flex {
+  max-width: 860px;
   display: flex;
+  gap: 10px;
   flex-direction: row;
   align-items: stretch;
+  overflow: hidden;
+  margin: 60px auto 0;
+  height: 380px;
 }
-.image {
-  flex: 1;
-  background-color: lightgray; /* Just for visibility */
-  margin: 5px;
-  height: 100px; /* Assuming a fixed height for the images */
+.best__item {
+  transition: all 0.3s ease;
+  cursor: pointer;
+  display: flex;
+  justify-content: start;
+  align-items: end;
+  padding: 15px;
+  overflow: hidden;
+  border-radius: 30px;
+  background-repeat: no-repeat;
+  width: 8%;
   position: relative;
-  transition: flex 0.3s ease;
 }
-.image.collapsed {
-  flex: 0 0 200px;
+.best__item-active {
+  width: 90%;
+}
+.best__box {
+  width: 40px;
+  height: 40px;
+  background-color: #fff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 12px;
+  left: 12px;
+  color: #000;
+  font-size: 30px;
 }
 
-button {
+.best__text {
+  width: 300px;
   position: absolute;
+  left: 65px;
   bottom: 10px;
-  right: 10px;
-  padding: 5px 10px;
+}
+.best__text h5 {
+  font-size: 20px;
+  color: #fff;
+  font-weight: bold;
+}
+
+@media (max-width: 770px) {
+  .best__flex {
+    max-width: 100%;
+  }
+  .best__item {
+    width: 12%;
+}
 }

@@ -3,7 +3,6 @@ import Navbar from "./components/Navbar/Navbar";
 import Hero from "./components/Hero/Hero";
 import Offer from "./components/Offer/Offer";
 import Explore from "./components/Explore/Explore";
-import Locations from "./components/Locations/Locations";
 import Test from "./components/Test/Test";
 
 function App() {
@@ -13,7 +12,6 @@ function App() {
       <Hero />
       <Offer />
       <Explore />
-      <Locations />
       <Test />
     </div>
   );
