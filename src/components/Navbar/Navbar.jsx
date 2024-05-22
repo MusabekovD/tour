@@ -5,9 +5,18 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import { FaTelegramPlane } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { MdOutlineClose } from "react-icons/md";
+
+import { useTranslation } from "react-i18next";
+
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const { t, i18n } = useTranslation();
 
+  const handleChangeLanguage = (event) => {
+    const selectedLanguage = event.target.value;
+    i18n.changeLanguage(selectedLanguage);
+    console.log("bosdm");
+  };
   const toggleNavbar = () => {
     setIsOpen(!isOpen);
   };
@@ -17,36 +26,41 @@ const Navbar = () => {
       <div className="container">
         <nav>
           <div className="logo">
-            <img src="	https://zamontour.uz/assets/images/zamon.svg" alt="" />
+            <a href="#">
+              <img src="https://zamontour.uz/assets/images/zamon.svg" alt="" />
+            </a>
           </div>
           <ul className="nav__list">
             <li className="nav__list-item">
-              <a href="#">Home</a>
+              <a href="/">{t("home")}</a>
             </li>
             <li className="nav__list-item">
-              <a href="#">About</a>
+              <a href="#about">{t("about")}</a>
             </li>
             <li className="nav__list-item">
-              <a href="#">Tour</a>
+              <a href="#offer">{t("tour")}</a>
             </li>
             <li className="nav__list-item">
-              <a href="#">Contacts</a>
+              <a href="#contacts">{t("contacts")}</a>
             </li>
-
           </ul>
           <div className="nav__icons nav__list">
             <li className="nav__icons-item nav__list-item ">
-              <a href="#">Uz</a>
+              <a onClick={handleChangeLanguage} href="#">
+                Uz
+              </a>
             </li>
             <li className="nav__icons-item nav__list-item ">
-              <a href="#">Ru</a>
+              <a onClick={handleChangeLanguage} href="#">
+                Ru
+              </a>
             </li>
             <li className="nav__icons-item nav__list-item ">
               <a href="#">Eng</a>
             </li>
             <li className="nav__icons-item nav__list-item ">
               <a href="#">
-                <FaTelegramPlane className="social_icon"/>
+                <FaTelegramPlane className="social_icon" />
               </a>
             </li>
             <li className="nav__icons-item nav__list-item ">
@@ -87,11 +101,11 @@ const Navbar = () => {
             </ul>
           </div>
           <div className="navbar__toggle" onClick={toggleNavbar}>
-            {
-              isOpen ?
-              <MdOutlineClose className="social_icon" /> :
-              <GiHamburgerMenu className="social_icon" /> 
-            }
+            {isOpen ? (
+              <MdOutlineClose className="social_icon" />
+            ) : (
+              <GiHamburgerMenu className="social_icon" />
+            )}
           </div>
         </nav>
       </div>

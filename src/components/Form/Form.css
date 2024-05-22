@@ -1,0 +1,91 @@
+.form {
+  margin: 100px 0;
+}
+.container {
+}
+
+.form__control {
+  padding: 70px 120px;
+  background-color: #f9f9f9;
+  border-bottom-right-radius: 23px;
+  border-bottom-left-radius: 23px;
+}
+.form__control-heading {
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 50px;
+  font-weight: 700;
+}
+.form__control-heading span {
+  font-style: normal;
+  color: #22b3c1;
+}
+.form__control-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.form__wrapper-1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  box-sizing: border-box;
+}
+.form__wrapper-1 input {
+  width: 45%;
+  padding: 20px;
+  border-radius: 30px;
+}
+.selector {
+  width: 45%;
+}
+.selector input.date {
+  width: 100%;
+}
+.selector .form-select {
+  padding: 20px 30px;
+  background-color: #fff;
+  border: 1px solid #e0e0e0;
+}
+.form-select {
+  width: 100%;
+  padding: 20px 30px;
+  background-color: transparent;
+  border-radius: 23px;
+  border: 1px solid #e0e0e0;
+  padding: 0px 20px;
+  cursor: pointer;
+  align-self: flex-start;
+}
+
+.form__wrapper-2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  box-sizing: border-box;
+  margin-bottom: 50px;
+}
+.form__wrapper-2 .form-select {
+  padding: 20px 30px;
+  background-color: #fff;
+  border: 1px solid #e0e0e0;
+}
+.form__wrapper-2 .selector {
+  width: 90%;
+  margin: 0 auto;
+  border: none;
+  outline: none;
+}
+.form__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  text-align: center;
+  width: 90%;
+  margin: 0 auto;
+}

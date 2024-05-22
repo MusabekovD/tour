@@ -28,6 +28,10 @@ const Test = () => {
           className={`best__item ${
             openCard === "img1" ? "best__item-active" : ""
           }`}
+          onClick={() => toggleClass("img1")}
+          className={`best__item ${
+            openCard === "img1" ? "best__item-active" : ""
+          }`}
           style={{ backgroundImage: `url(${img1})` }}
         >
           <div className="best__box" onClick={() => toggleClass("img1")}>
@@ -39,7 +43,8 @@ const Test = () => {
           </div>
         </div>
         <div
-           className={`best__item ${
+          onClick={() => toggleClass("img2")}
+          className={`best__item ${
             openCard === "img2" ? "best__item-active" : ""
           }`}
           style={{ backgroundImage: `url(${img2})` }}
@@ -53,7 +58,8 @@ const Test = () => {
           </div>
         </div>
         <div
-           className={`best__item ${
+          onClick={() => toggleClass("img3")}
+          className={`best__item ${
             openCard === "img3" ? "best__item-active" : ""
           }`}
           style={{ backgroundImage: `url(${img3})` }}
@@ -67,7 +73,8 @@ const Test = () => {
           </div>
         </div>
         <div
-           className={`best__item ${
+          onClick={() => toggleClass("img4")}
+          className={`best__item ${
             openCard === "img4" ? "best__item-active" : ""
           }`}
           style={{ backgroundImage: `url(${img4})` }}
@@ -81,6 +88,7 @@ const Test = () => {
           </div>
         </div>
         <div
+          onClick={() => toggleClass("img5")}
           className={`best__item ${
             openCard === "img5" ? "best__item-active" : ""
           }`}

@@ -1,0 +1,71 @@
+@media (max-width: 1200px) {
+  .discover__card-icon {
+    width: 40px;
+    height: 40px;
+    line-height: 30px;
+    font-size: 12px;
+  }
+  .discover__icon {
+    font-size: 20px;
+  }
+  h3.discover__title {
+    font-size: 18px;
+  }
+  .discover__number {
+    font-size: 13px;
+  }
+  .discover__main .container {
+    max-width: 768px;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 991px) {
+  .discover__title {
+    font-size: 30px;
+  }
+}
+@media (max-width: 768px) {
+  .discover__main .container {
+    max-width: 568px;
+    margin: 0 auto;
+  }
+  .discover__cards {
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .disover__card {
+    width: 315px;
+    height: 160px;
+    background-color: #838383;
+  }
+  h3.discover__title {
+    color: #fff;
+  }
+  .discover__number {
+
+    color: #fff;
+  }
+  
+}
+@media (max-width: 450px) {
+  .discover__title {
+    font-size: 20px;
+  }
+  .discover__subtitle {
+    font-size: 16px;
+  }
+  .discover__btn {
+    font-size: 12px;
+  }
+}
+
+/*
+ @media (max-width: 1200px) {
+}
+@media (max-width: 991px) {
+}
+@media (max-width: 768px) {
+}
+@media (max-width: 450px) {
+}
+ */

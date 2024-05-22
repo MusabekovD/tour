@@ -13,55 +13,53 @@ import img3 from "../../assets/offer/3.jpg";
 import img4 from "../../assets/offer/4.jpg";
 import img5 from "../../assets/offer/5.jpg";
 
-import hongkong from "../../assets/hero/hongkong.jpg"
-import india from "../../assets/hero/india.jpg"
-import china from "../../assets/hero/china.jpg"
-import japan from "../../assets/hero/japan.jpg"
-import oman from "../../assets/hero/oman.jpg"
+import hongkong from "../../assets/hero/hongkong.jpg";
+import india from "../../assets/hero/india.jpg";
+import china from "../../assets/hero/china.jpg";
+import japan from "../../assets/hero/japan.jpg";
+import oman from "../../assets/hero/oman.jpg";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper core and required modules
 import { Navigation, Pagination } from "swiper/modules";
 // Import Swiper styles
-import 'swiper/css';
-import 'swiper/css/pagination';
+import "swiper/css";
+import "swiper/css/pagination";
 const Offer = () => {
   // Swiper instance reference
+  let example = null;
   let swiperInstance = null;
-
   return (
     <>
-
-      <section className="offer">
+      <section className="offer" id="#offer">
         <div className="container wrapper">
           <div className="header__text">
             <h2 className="header__title">Best Weekly Offers In Each City</h2>
             <p className="header__subtitle">
-              Discover the best weekly offers in each city, curated just for you.
-              Immerse yourself in a world of savings and indulge in unparalleled
-              experiences.
+              Discover the best weekly offers in each city, curated just for
+              you. Immerse yourself in a world of savings and indulge in
+              unparalleled experiences.
             </p>
           </div>
           <div className="offer__slider-cards">
             <Swiper
               modules={[Navigation, Pagination]}
               onSwiper={(swiper) => {
-                swiperInstance = swiper;
+                example = swiper;
               }}
               spaceBetween={200}
               slidesPerView={3}
               loop={true}
               navigation
-              pagination={{ clickable: true }}
               breakpoints={{
                 340: {
                   slidesPerView: 1,
-                  spaceBetween: 10,
+                  spaceBetween: 0,
                 },
                 640: {
                   slidesPerView: 1,
-                  spaceBetween: 20,
+                  spaceBetween: 0,
                 },
                 768: {
                   slidesPerView: 2,
@@ -280,13 +278,13 @@ const Offer = () => {
           <div className="offer__slider-icons">
             <div
               className="offer__slider-btn"
-              onClick={() => swiperInstance.slidePrev()}
+              onClick={() => example.slidePrev()}
             >
               <FaArrowCircleLeft />
             </div>
             <div
               className="offer__slider-btn"
-              onClick={() => swiperInstance.slideNext()}
+              onClick={() => example.slideNext()}
             >
               <FaArrowCircleRight />
             </div>
@@ -298,7 +296,9 @@ const Offer = () => {
           <div className="header__text">
             <h2 className="header__title">Visa Support</h2>
             <p className="header__subtitle">
-            Experience stress-free travel with our expert visa support. We provide seamless assistance and comprehensive guidance, ensuring a smooth journey.
+              Experience stress-free travel with our expert visa support. We
+              provide seamless assistance and comprehensive guidance, ensuring a
+              smooth journey.
             </p>
           </div>
           <div className=" offer__slider-cards">
@@ -504,7 +504,7 @@ const Offer = () => {
                     <div className="offer__slide-info">
                       <div className="offer__slide-header">
                         <div className="offer__slide-title">
-                        india <br />
+                          india <br />
                           300 check ins
                         </div>
                         <div className="offer__slide-subtitle">
@@ -533,7 +533,6 @@ const Offer = () => {
                   </div>
                 </div>
               </SwiperSlide>
-          
             </Swiper>
           </div>
           <div className="offer__slider-icons">

@@ -1,0 +1,22 @@
+@media (max-width: 1200px) {
+}
+@media (max-width: 992px) {
+  .form__wrapper-1 {
+    flex-direction: column;
+  }
+  .form__wrapper-1 input {
+    width: 90%;
+  }
+  .selector {
+    width: 90%;
+  }
+
+  
+}
+@media (max-width: 768px) {
+    .form__control {
+        padding: 70px 20px;
+    }
+}
+@media (max-width: 450px) {
+}
