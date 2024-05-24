@@ -6,9 +6,11 @@ import img3 from "../../assets/locations/dubai.jpg";
 import img4 from "../../assets/locations/istanbul.jpg";
 import img5 from "../../assets/locations/sharm.jpg";
 import { TbZoomScan } from "react-icons/tb";
+import { useTranslation } from "react-i18next";
+
 const Test = () => {
   const [openCard, setOpenCard] = useState(null);
-
+  const { t, i18n } = useTranslation();
   const toggleClass = (img) => {
     setOpenCard((prevCard) => (prevCard === img ? null : img));
   };
@@ -16,18 +18,13 @@ const Test = () => {
   return (
     <div className="test container">
       <div className="header__text">
-        <h2 className="header__title">Best Locations</h2>
+        <h2 className="header__title">{t("location_title")}</h2>
         <p className="header__subtitle">
-          Discover the best offers in each city, curated just for you. Immerse
-          yourself in a world of savings and indulge in unparalleled
-          experiences.
+        {t("location_desc")}
         </p>
       </div>
       <div className="best__flex">
         <div
-          className={`best__item ${
-            openCard === "img1" ? "best__item-active" : ""
-          }`}
           onClick={() => toggleClass("img1")}
           className={`best__item ${
             openCard === "img1" ? "best__item-active" : ""
@@ -38,8 +35,7 @@ const Test = () => {
             <TbZoomScan />
           </div>
           <div className="best__text">
-            <h5>Dubay</h5>
-            <p>Aholisi:: 3M</p>
+            <h5>{t("location.card1.title")}</h5>
           </div>
         </div>
         <div
@@ -53,8 +49,7 @@ const Test = () => {
             <TbZoomScan />
           </div>
           <div className="best__text">
-            <h5>Dubay</h5>
-            <p>Aholisi:: 3M</p>
+            <h5>{t("location.card2.title")}</h5>
           </div>
         </div>
         <div
@@ -68,8 +63,7 @@ const Test = () => {
             <TbZoomScan />
           </div>
           <div className="best__text">
-            <h5>Dubay</h5>
-            <p>Aholisi:: 3M</p>
+            <h5>{t("location.card3.title")}</h5>
           </div>
         </div>
         <div
@@ -83,8 +77,8 @@ const Test = () => {
             <TbZoomScan />
           </div>
           <div className="best__text">
-            <h5>Dubay</h5>
-            <p>Aholisi:: 3M</p>
+            <h5>{t("location.card4.title")}</h5>
+
           </div>
         </div>
         <div
@@ -98,8 +92,7 @@ const Test = () => {
             <TbZoomScan />
           </div>
           <div className="best__text">
-            <h5>Dubay</h5>
-            <p>Aholisi:: 3M</p>
+            <h5>{t("location.card5.title")}</h5>
           </div>
         </div>
       </div>

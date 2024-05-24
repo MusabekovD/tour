@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import "./Hero.css";
 import "./HeroQuery.css";
 
@@ -7,13 +7,19 @@ import { FaEarthAfrica } from "react-icons/fa6";
 import { IoMdHome } from "react-icons/io";
 // import Swiper JS
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination, Scrollbar, A11y, Autoplay } from "swiper/modules";
-
+import { Navigation, Pagination, Scrollbar, A11y } from "swiper/modules";
+import { useTranslation } from "react-i18next";
 
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/autoplay";
+
+import Typed from "typed.js";
 const Hero = () => {
+  const { t, i18n } = useTranslation();
+ 
+
+
   return (
     <>
       <Swiper
@@ -23,19 +29,17 @@ const Hero = () => {
         loop={true}
         pagination={{ clickable: true }}
         scrollbar={{ draggable: true }}
-        Autoplay = {true}
+        Autoplay={true}
         className="hero"
       >
         <SwiperSlide>
           <section className="hero hero-1" id="hero">
-            <div className="container">
+            <div className="container hero__container">
               <div className="hero__main">
                 <div className="hero__text">
-                  <p className="hero__text-subtitle">
-                    Take a Glimpse Into The Beautiful City Of:
-                  </p>
-                  <h2 className="hero__text-title">Istanbul</h2>
-                  <div className="hero__text-btn btn">Go there !</div>
+                  <p className="hero__text-subtitle">{t("hero_desc")}</p>
+                  <h2 className="hero__text-title">{t("hero_title_first")}</h2>
+                  <div className="hero__text-btn btn">{t("go_there")}</div>
                 </div>
                 <div className="hero__info">
                   <div className="hero__population hero__info-flex">
@@ -45,7 +49,7 @@ const Hero = () => {
                       </a>
                     </div>
                     <div className="hero__txt">
-                      Population: <br /> <span>8.66 M</span>
+                      {t("population")} <br /> <span>8.66 M</span>
                     </div>
                   </div>
                   <div className="hero__territory hero__info-flex">
@@ -55,7 +59,7 @@ const Hero = () => {
                       </a>
                     </div>
                     <div className="hero__txt">
-                      Territory: <br /> <span>41.290 KM2</span>
+                      {t("territory")} <br /> <span>41.290 KM2</span>
                     </div>
                   </div>
                   <div className="hero__price hero__info-flex">
@@ -65,10 +69,10 @@ const Hero = () => {
                       </a>
                     </div>
                     <div className="hero__txt">
-                      AVG Price: <br /> <span>$1.100.200 </span>
+                      {t("price")} <br /> <span>$1.100.200 </span>
                     </div>
                   </div>
-                  <div className="btn">Explore More</div>
+                  <div className="btn"> {t("explore")}</div>
                 </div>
               </div>
             </div>
@@ -76,14 +80,12 @@ const Hero = () => {
         </SwiperSlide>
         <SwiperSlide>
           <section className="hero hero-2" id="hero">
-            <div className="container">
+            <div className="container hero__container">
               <div className="hero__main">
                 <div className="hero__text">
-                  <p className="hero__text-subtitle">
-                    Take a Glimpse Into The Beautiful City Of:
-                  </p>
-                  <h2 className="hero__text-title">Antalya</h2>
-                  <div className="hero__text-btn btn">Go there !</div>
+                  <p className="hero__text-subtitle">{t("hero_desc")}</p>
+                  <h2 className="hero__text-title">{t("hero_title_second")}</h2>
+                  <div className="hero__text-btn btn">{t("go_there")}</div>
                 </div>
                 <div className="hero__info">
                   <div className="hero__population hero__info-flex">
@@ -93,7 +95,7 @@ const Hero = () => {
                       </a>
                     </div>
                     <div className="hero__txt">
-                      Population: <br /> <span>8.66 M</span>
+                      {t("population")} <br /> <span>8.66 M</span>
                     </div>
                   </div>
                   <div className="hero__territory hero__info-flex">
@@ -103,7 +105,7 @@ const Hero = () => {
                       </a>
                     </div>
                     <div className="hero__txt">
-                      Territory: <br /> <span>41.290 KM2</span>
+                      {t("territory")} <br /> <span>41.290 KM2</span>
                     </div>
                   </div>
                   <div className="hero__price hero__info-flex">
@@ -113,10 +115,10 @@ const Hero = () => {
                       </a>
                     </div>
                     <div className="hero__txt">
-                      AVG Price: <br /> <span>$1.100.200 </span>
+                      {t("price")} <br /> <span>$1.100.200 </span>
                     </div>
                   </div>
-                  <div className="btn">Explore More</div>
+                  <div className="btn">{t("explore")}</div>
                 </div>
               </div>
             </div>
@@ -130,14 +132,12 @@ const Hero = () => {
             }}
             id="hero"
           >
-            <div className="container">
+            <div className="container hero__container">
               <div className="hero__main">
                 <div className="hero__text">
-                  <p className="hero__text-subtitle">
-                    Take a Glimpse Into The Beautiful City Of:
-                  </p>
-                  <h2 className="hero__text-title">Dubai</h2>
-                  <div className="hero__text-btn btn">Go there !</div>
+                  <p className="hero__text-subtitle">{t("hero_desc")}</p>
+                  <h2 className="hero__text-title"> {t("hero_title_third")}</h2>
+                  <div className="hero__text-btn btn">{t("go_there")}</div>
                 </div>
                 <div className="hero__info">
                   <div className="hero__population hero__info-flex">
@@ -147,7 +147,7 @@ const Hero = () => {
                       </a>
                     </div>
                     <div className="hero__txt">
-                      Population: <br />{" "}
+                      {t("population")} <br />{" "}
                       <span className="hero__txt-span">8.66 M</span>
                     </div>
                   </div>
@@ -158,7 +158,7 @@ const Hero = () => {
                       </a>
                     </div>
                     <div className="hero__txt">
-                      Territory: <br /> <span>41.290 KM2</span>
+                      {t("territory")} <br /> <span>41.290 KM2</span>
                     </div>
                   </div>
                   <div className="hero__price hero__info-flex">
@@ -168,10 +168,10 @@ const Hero = () => {
                       </a>
                     </div>
                     <div className="hero__txt">
-                      AVG Price: <br /> <span>$1.100.200 </span>
+                      {t("price")} <br /> <span>$1.100.200 </span>
                     </div>
                   </div>
-                  <div className="btn">Explore More</div>
+                  <div className="btn"> {t("explore")}</div>
                 </div>
               </div>
             </div>

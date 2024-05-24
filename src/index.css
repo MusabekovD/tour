@@ -54,8 +54,12 @@ li {
   background-color: #22b3c1;
   color: #fff;
   cursor: pointer;
+  transition: 0.3s linear;
 }
-
+.btn:hover {
+  color: #22b3c1;
+  background-color: #fff;
+}
 .header__text {
   display: flex;
   flex-direction: column;
@@ -78,18 +82,24 @@ li {
   line-height: 30px;
   color: #afafaf;
 }
-.flex{
-    display: flex;
-    align-items: center;
+.flex {
+  display: flex;
+  align-items: center;
 }
-.hero .swiper-pagination-bullet{
+.hero .swiper-pagination-bullet {
   width: 100px;
   height: 8px;
   border-radius: 0%;
   background-color: #22b3c1;
   border-radius: 10px;
 }
-
+.card__scale {
+  transition: 0.2s linear;
+  cursor: pointer;
+}
+.card__scale:hover {
+  transform: scale(1.1);
+}
 /*
  @media (max-width: 1200px) {
 }

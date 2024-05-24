@@ -18,6 +18,7 @@ import india from "../../assets/hero/india.jpg";
 import china from "../../assets/hero/china.jpg";
 import japan from "../../assets/hero/japan.jpg";
 import oman from "../../assets/hero/oman.jpg";
+import { useTranslation } from "react-i18next";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -30,17 +31,14 @@ const Offer = () => {
   // Swiper instance reference
   let example = null;
   let swiperInstance = null;
+  const { t, i18n } = useTranslation();
   return (
     <>
-      <section className="offer" id="#offer">
+      <section className="offer" id="offer">
         <div className="container wrapper">
           <div className="header__text">
-            <h2 className="header__title">Best Weekly Offers In Each City</h2>
-            <p className="header__subtitle">
-              Discover the best weekly offers in each city, curated just for
-              you. Immerse yourself in a world of savings and indulge in
-              unparalleled experiences.
-            </p>
+            <h2 className="header__title">{t("offer_title")}</h2>
+            <p className="header__subtitle">{t("offer_desc")}</p>
           </div>
           <div className="offer__slider-cards">
             <Swiper
@@ -77,85 +75,70 @@ const Offer = () => {
                     <div className="offer__img">
                       <img src={img1} alt="" />
                     </div>
-                    <div className="offer__slide-info">
+                    <div className="offer__slide-info card__scale">
                       <div className="offer__slide-header">
                         <div className="offer__slide-title">
-                          England <br />
-                          300 check ins{" "}
-                        </div>
-                        <div className="offer__slide-subtitle">
-                          $999 <br />
-                          /person{" "}
+                          {t("card1.title")} <br />
+                          {t("card1.person")}
                         </div>
                       </div>
                       <div className="offer__slide-body">
-                        <h6 className="offer__body-title">Deal includes</h6>
+                        <h6 className="offer__body-title">{t("deal")}</h6>
                         <div className="offer__body-icon flex">
                           {" "}
-                          <FaCar /> 6days trip hotel included
+                          <FaCar /> {t("card1.car")}
                         </div>
                         <div className="offer__body-icon flex">
                           {" "}
                           <SiEthiopianairlines />
-                          Airline will included
+                          {t("card1.plane")}
                         </div>
                         <div className="offer__body-icon flex">
                           <FaBusSimple />
-                          Daily Places visit
+                          {t("card1.building")}
                         </div>
                         <div className="offer__body-btn btn">
-                          Make A Reservation{" "}
+                          {t("reserve")}
                         </div>
                       </div>
                     </div>
                   </div>
-                  <div className="offer__slider-icons">
-                    <div className="offer__slider-left"></div>
-                    <div className="offer__slider-right"></div>
-                  </div>
                 </div>
               </SwiperSlide>
+
               <SwiperSlide>
                 <div className="offer__slider">
                   <div className="offer__slide">
                     <div className="offer__img">
                       <img src={img2} alt="" />
                     </div>
-                    <div className="offer__slide-info">
+                    <div className="offer__slide-info card__scale">
                       <div className="offer__slide-header">
                         <div className="offer__slide-title">
-                          England <br />
-                          300 check ins{" "}
-                        </div>
-                        <div className="offer__slide-subtitle">
-                          $999 <br />
-                          /person{" "}
+                          {t("card2.title")} <br />
+                          {t("card2.person")}
                         </div>
                       </div>
                       <div className="offer__slide-body">
-                        <h6 className="offer__body-title">Deal includes</h6>
+                        <h6 className="offer__body-title">{t("deal")}</h6>
                         <div className="offer__body-icon flex">
                           {" "}
-                          <FaCar /> 6days trip hotel included
+                          <FaCar /> {t("card2.car")}
                         </div>
                         <div className="offer__body-icon flex">
                           {" "}
                           <SiEthiopianairlines />
-                          Airline will included
+                          {t("card2.plane")}
                         </div>
                         <div className="offer__body-icon flex">
                           <FaBusSimple />
-                          Daily Places visit
+                          {t("card2.building")}
                         </div>
                         <div className="offer__body-btn btn">
-                          Make A Reservation{" "}
+                          {t("reserve")}
                         </div>
                       </div>
                     </div>
-                  </div>
-                  <div className="offer__slider-icons">
-                    <div className="offer__slider-left"></div>
-                    <div className="offer__slider-right"></div>
                   </div>
                 </div>
               </SwiperSlide>
@@ -165,32 +148,30 @@ const Offer = () => {
                     <div className="offer__img">
                       <img src={img3} alt="" />
                     </div>
-                    <div className="offer__slide-info">
+                    <div className="offer__slide-info card__scale">
                       <div className="offer__slide-header">
                         <div className="offer__slide-title">
-                          England <br />
-                          300 check ins
-                        </div>
-                        <div className="offer__slide-subtitle">
-                          $999 <br />
-                          /person
+                          {t("card3.title")} <br />
+                          {t("card3.person")}
                         </div>
                       </div>
                       <div className="offer__slide-body">
-                        <h6 className="offer__body-title">Deal includes</h6>
+                        <h6 className="offer__body-title">{t("deal")}</h6>
                         <div className="offer__body-icon flex">
-                          <FaCar /> 6days trip hotel included
+                          {" "}
+                          <FaCar /> {t("card3.car")}
                         </div>
                         <div className="offer__body-icon flex">
+                          {" "}
                           <SiEthiopianairlines />
-                          Airline will included
+                          {t("card3.plane")}
                         </div>
                         <div className="offer__body-icon flex">
                           <FaBusSimple />
-                          Daily Places visit
+                          {t("card3.building")}
                         </div>
                         <div className="offer__body-btn btn">
-                          Make A Reservation{" "}
+                          {t("reserve")}
                         </div>
                       </div>
                     </div>
@@ -203,32 +184,30 @@ const Offer = () => {
                     <div className="offer__img">
                       <img src={img4} alt="" />
                     </div>
-                    <div className="offer__slide-info">
+                    <div className="offer__slide-info card__scale">
                       <div className="offer__slide-header">
                         <div className="offer__slide-title">
-                          England <br />
-                          300 check ins
-                        </div>
-                        <div className="offer__slide-subtitle">
-                          $999 <br />
-                          /person
+                          {t("card4.title")} <br />
+                          {t("card4.person")}
                         </div>
                       </div>
                       <div className="offer__slide-body">
-                        <h6 className="offer__body-title">Deal includes</h6>
+                        <h6 className="offer__body-title">{t("deal")}</h6>
                         <div className="offer__body-icon flex">
-                          <FaCar /> 6days trip hotel included
+                          {" "}
+                          <FaCar /> {t("card4.car")}
                         </div>
                         <div className="offer__body-icon flex">
+                          {" "}
                           <SiEthiopianairlines />
-                          Airline will included
+                          {t("card4.plane")}
                         </div>
                         <div className="offer__body-icon flex">
                           <FaBusSimple />
-                          Daily Places visit
+                          {t("card4.building")}
                         </div>
                         <div className="offer__body-btn btn">
-                          Make A Reservation{" "}
+                          {t("reserve")}
                         </div>
                       </div>
                     </div>
@@ -241,32 +220,30 @@ const Offer = () => {
                     <div className="offer__img">
                       <img src={img5} alt="" />
                     </div>
-                    <div className="offer__slide-info">
+                    <div className="offer__slide-info card__scale">
                       <div className="offer__slide-header">
                         <div className="offer__slide-title">
-                          England <br />
-                          300 check ins
-                        </div>
-                        <div className="offer__slide-subtitle">
-                          $999 <br />
-                          /person
+                          {t("card5.title")} <br />
+                          {t("card5.person")}
                         </div>
                       </div>
                       <div className="offer__slide-body">
-                        <h6 className="offer__body-title">Deal includes</h6>
+                        <h6 className="offer__body-title">{t("deal")}</h6>
                         <div className="offer__body-icon flex">
-                          <FaCar /> 6days trip hotel included
+                          {" "}
+                          <FaCar /> {t("card5.car")}
                         </div>
                         <div className="offer__body-icon flex">
+                          {" "}
                           <SiEthiopianairlines />
-                          Airline will included
+                          {t("card5.plane")}
                         </div>
                         <div className="offer__body-icon flex">
                           <FaBusSimple />
-                          Daily Places visit
+                          {t("card5.building")}
                         </div>
                         <div className="offer__body-btn btn">
-                          Make A Reservation{" "}
+                          {t("reserve")}
                         </div>
                       </div>
                     </div>
@@ -294,12 +271,8 @@ const Offer = () => {
       <section className="offer">
         <div className="container wrapper">
           <div className="header__text">
-            <h2 className="header__title">Visa Support</h2>
-            <p className="header__subtitle">
-              Experience stress-free travel with our expert visa support. We
-              provide seamless assistance and comprehensive guidance, ensuring a
-              smooth journey.
-            </p>
+            <h2 className="header__title">{t("visa_title")}</h2>
+            <p className="header__subtitle">{t("visa_desc")}</p>
           </div>
           <div className=" offer__slider-cards">
             <Swiper
@@ -332,46 +305,38 @@ const Offer = () => {
               }}
             >
               <SwiperSlide>
-                <div className="offer__slider">
+                <div className="offer__slider" >
                   <div className="offer__slide">
                     <div className="offer__img">
                       <img src={oman} alt="" />
                     </div>
-                    <div className="offer__slide-info">
+                    <div className="offer__slide-info card__scale" >
                       <div className="offer__slide-header">
                         <div className="offer__slide-title">
-                          Oman <br />
-                          300 check ins{" "}
-                        </div>
-                        <div className="offer__slide-subtitle">
-                          $999 <br />
-                          /person{" "}
+                          {t("visa1.title")} <br />
+                          {t("visa1.person")}
                         </div>
                       </div>
                       <div className="offer__slide-body">
-                        <h6 className="offer__body-title">Deal includes</h6>
+                        <h6 className="offer__body-title">{t("deal")}</h6>
                         <div className="offer__body-icon flex">
                           {" "}
-                          <FaCar /> 6days trip hotel included
+                          <FaCar /> {t("card1.car")}
                         </div>
                         <div className="offer__body-icon flex">
                           {" "}
                           <SiEthiopianairlines />
-                          Airline will included
+                          {t("card1.plane")}
                         </div>
                         <div className="offer__body-icon flex">
                           <FaBusSimple />
-                          Daily Places visit
+                          {t("card1.building")}
                         </div>
                         <div className="offer__body-btn btn">
-                          Make A Reservation{" "}
+                          {t("reserve")}
                         </div>
                       </div>
                     </div>
-                  </div>
-                  <div className="offer__slider-icons">
-                    <div className="offer__slider-left"></div>
-                    <div className="offer__slider-right"></div>
                   </div>
                 </div>
               </SwiperSlide>
@@ -381,41 +346,33 @@ const Offer = () => {
                     <div className="offer__img">
                       <img src={japan} alt="" />
                     </div>
-                    <div className="offer__slide-info">
+                    <div className="offer__slide-info card__scale">
                       <div className="offer__slide-header">
                         <div className="offer__slide-title">
-                          Japan <br />
-                          300 check ins{" "}
-                        </div>
-                        <div className="offer__slide-subtitle">
-                          $999 <br />
-                          /person{" "}
+                          {t("visa2.title")} <br />
+                          {t("visa2.person")}
                         </div>
                       </div>
                       <div className="offer__slide-body">
-                        <h6 className="offer__body-title">Deal includes</h6>
+                        <h6 className="offer__body-title">{t("deal")}</h6>
                         <div className="offer__body-icon flex">
                           {" "}
-                          <FaCar /> 6days trip hotel included
+                          <FaCar /> {t("card2.car")}
                         </div>
                         <div className="offer__body-icon flex">
                           {" "}
                           <SiEthiopianairlines />
-                          Airline will included
+                          {t("card2.plane")}
                         </div>
                         <div className="offer__body-icon flex">
                           <FaBusSimple />
-                          Daily Places visit
+                          {t("card2.building")}
                         </div>
                         <div className="offer__body-btn btn">
-                          Make A Reservation{" "}
+                          {t("reserve")}
                         </div>
                       </div>
                     </div>
-                  </div>
-                  <div className="offer__slider-icons">
-                    <div className="offer__slider-left"></div>
-                    <div className="offer__slider-right"></div>
                   </div>
                 </div>
               </SwiperSlide>
@@ -425,32 +382,30 @@ const Offer = () => {
                     <div className="offer__img">
                       <img src={china} alt="" />
                     </div>
-                    <div className="offer__slide-info">
+                    <div className="offer__slide-info card__scale">
                       <div className="offer__slide-header">
                         <div className="offer__slide-title">
-                          China <br />
-                          300 check ins
-                        </div>
-                        <div className="offer__slide-subtitle">
-                          $999 <br />
-                          /person
+                          {t("visa3.title")} <br />
+                          {t("visa3.person")}
                         </div>
                       </div>
                       <div className="offer__slide-body">
-                        <h6 className="offer__body-title">Deal includes</h6>
+                        <h6 className="offer__body-title">{t("deal")}</h6>
                         <div className="offer__body-icon flex">
-                          <FaCar /> 6days trip hotel included
+                          {" "}
+                          <FaCar /> {t("card3.car")}
                         </div>
                         <div className="offer__body-icon flex">
+                          {" "}
                           <SiEthiopianairlines />
-                          Airline will included
+                          {t("card3.plane")}
                         </div>
                         <div className="offer__body-icon flex">
                           <FaBusSimple />
-                          Daily Places visit
+                          {t("card3.building")}
                         </div>
                         <div className="offer__body-btn btn">
-                          Make A Reservation{" "}
+                          {t("reserve")}
                         </div>
                       </div>
                     </div>
@@ -463,32 +418,30 @@ const Offer = () => {
                     <div className="offer__img">
                       <img src={hongkong} alt="" />
                     </div>
-                    <div className="offer__slide-info">
+                    <div className="offer__slide-info card__scale">
                       <div className="offer__slide-header">
                         <div className="offer__slide-title">
-                          HongKong <br />
-                          300 check ins
-                        </div>
-                        <div className="offer__slide-subtitle">
-                          $999 <br />
-                          /person
+                          {t("visa4.title")} <br />
+                          {t("visa4.person")}
                         </div>
                       </div>
                       <div className="offer__slide-body">
-                        <h6 className="offer__body-title">Deal includes</h6>
+                        <h6 className="offer__body-title">{t("deal")}</h6>
                         <div className="offer__body-icon flex">
-                          <FaCar /> 6days trip hotel included
+                          {" "}
+                          <FaCar /> {t("card4.car")}
                         </div>
                         <div className="offer__body-icon flex">
+                          {" "}
                           <SiEthiopianairlines />
-                          Airline will included
+                          {t("card4.plane")}
                         </div>
                         <div className="offer__body-icon flex">
                           <FaBusSimple />
-                          Daily Places visit
+                          {t("card4.building")}
                         </div>
                         <div className="offer__body-btn btn">
-                          Make A Reservation{" "}
+                          {t("reserve")}
                         </div>
                       </div>
                     </div>
@@ -501,32 +454,30 @@ const Offer = () => {
                     <div className="offer__img">
                       <img src={india} alt="" />
                     </div>
-                    <div className="offer__slide-info">
+                    <div className="offer__slide-info card__scale">
                       <div className="offer__slide-header">
                         <div className="offer__slide-title">
-                          india <br />
-                          300 check ins
-                        </div>
-                        <div className="offer__slide-subtitle">
-                          $999 <br />
-                          /person
+                          {t("visa5.title")} <br />
+                          {t("visa5.person")}
                         </div>
                       </div>
                       <div className="offer__slide-body">
-                        <h6 className="offer__body-title">Deal includes</h6>
+                        <h6 className="offer__body-title">{t("deal")}</h6>
                         <div className="offer__body-icon flex">
-                          <FaCar /> 6days trip hotel included
+                          {" "}
+                          <FaCar /> {t("card5.car")}
                         </div>
                         <div className="offer__body-icon flex">
+                          {" "}
                           <SiEthiopianairlines />
-                          Airline will included
+                          {t("card5.plane")}
                         </div>
                         <div className="offer__body-icon flex">
                           <FaBusSimple />
-                          Daily Places visit
+                          {t("card5.building")}
                         </div>
                         <div className="offer__body-btn btn">
-                          Make A Reservation{" "}
+                          {t("reserve")}
                         </div>
                       </div>
                     </div>

@@ -5,17 +5,16 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import { FaTelegramPlane } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { MdOutlineClose } from "react-icons/md";
-
-import { useTranslation } from "react-i18next";
+import Explore from "../Explore/Explore"
+import { useTranslation } from "react-i18next"; 
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const { t, i18n } = useTranslation();
+
+  const { t, i18n } = useTranslation(); 
 
   const handleChangeLanguage = (event) => {
-    const selectedLanguage = event.target.value;
-    i18n.changeLanguage(selectedLanguage);
-    console.log("bosdm");
+    i18n.changeLanguage(event.target.innerText.toLowerCase());
   };
   const toggleNavbar = () => {
     setIsOpen(!isOpen);
@@ -56,7 +55,9 @@ const Navbar = () => {
               </a>
             </li>
             <li className="nav__icons-item nav__list-item ">
-              <a href="#">Eng</a>
+              <a onClick={handleChangeLanguage} href="#">
+                Eng
+              </a>
             </li>
             <li className="nav__icons-item nav__list-item ">
               <a href="#">
@@ -72,25 +73,25 @@ const Navbar = () => {
           <div className={`mobileNavbar ${isOpen ? "active" : ""} `}>
             <ul className="mobileNavbar__list">
               <li className="mobileNavbar__list-item">
-                <a href="#">Home</a>
+                <a href="#">{t("home")}</a>
               </li>
               <li className="mobileNavbar__list-item">
-                <a href="#">About</a>
+                <a href="#">{t("about")}</a>
               </li>
               <li className="mobileNavbar__list-item">
-                <a href="#">Tour</a>
+                <a href="#">{t("tour")}</a>
               </li>
               <li className="mobileNavbar__list-item">
-                <a href="#">Contacts</a>
+                <a href="#">{t("contacts")}</a>
               </li>
               <li className="mobileNavbar__list-item">
-                <a href="#">Uz</a>
+                <a onClick={handleChangeLanguage} href="#">Uz</a>
               </li>
               <li className="mobileNavbar__list-item">
-                <a href="#">Eng</a>
+                <a onClick={handleChangeLanguage} href="#">Eng</a>
               </li>
               <li className="mobileNavbar__list-item">
-                <a href="#">Ru</a>
+                <a onClick={handleChangeLanguage} href="#">Ru</a>
               </li>
               <li className="mobileNavbar__list-item">
                 <FaTelegramPlane className="social_icon" />

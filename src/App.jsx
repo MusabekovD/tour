@@ -11,6 +11,7 @@ import Footer from "./components/Footer/Footer";
 import i18n from "./i18n";
 
 function App() {
+  
   return (
     <div className="App">
       <Navbar />

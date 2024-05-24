@@ -3,19 +3,18 @@
   background-color: rgb(240, 240, 240);
   border-bottom: 1px solid rgb(238, 238, 238);
 }
-.wrapper{
+.wrapper {
   margin-top: 40px;
 }
 .offer__slide {
   padding: 70px 0;
   position: relative;
 }
-.offer__slider-cards{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 50px;
-    
+.offer__slider-cards {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
 }
 .offer__slider {
   display: flex;
@@ -79,13 +78,13 @@
 .btn {
 }
 .offer__slider-icons {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
 }
 .offer__slider-btn {
-    font-size: 50px;
-    color: aqua;
-    cursor: pointer;
+  font-size: 50px;
+  color: #22b3c1;
+  cursor: pointer;
 }

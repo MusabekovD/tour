@@ -1,23 +1,25 @@
 import React from "react";
 import "./Footer.css";
 import "./FooterQuery.css";
+import { useTranslation } from "react-i18next";
 
 const Footer = () => {
+  const { t, i18n } = useTranslation();
+
   return (
     <section className="footer">
       <div className="container">
         <div className="footer__content">
           <div className="footer__text">
-            <h5 className="footer__text-title">ARE YOU LOOKING TO TRAVEL ?</h5>
+            <h5 className="footer__text-title">{t("footer_title")}</h5>
             <p className="footer__text-subtitle">
-              Make A Reservation By Clicking The Button
+            {t("footer_desc")}
             </p>
           </div>
           <div className="footer__btn btn">
-            <a href="#">Book Yours Now</a>
+            <a href="#">{t("footer_btn")}</a>
           </div>
         </div>
-
       </div>
     </section>
   );

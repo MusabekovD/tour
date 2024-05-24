@@ -72,6 +72,9 @@
   }
 }
 @media (max-width: 450px) {
+  .hero{
+    height: 100vh;
+  }
   .hero__info {
     background-color: rgb(255, 255, 255, 0.2);
     padding: 30px 10px;
@@ -85,7 +88,7 @@
   }
 
   .hero__text-title {
-    font-size: 50px;
+    font-size: 30px;
     color: #ffff;
     font-weight: 700;
     margin-bottom: 30px;
