@@ -22,7 +22,7 @@ const Explore = () => {
             <div className="header__title"> {t("explore_title")}</div>
             <div className="header__subtitle">{t("explore_desc")}</div>
           </div>
-          <div className="expore__contents" >
+          <div className="expore__contents">
             <div className="explore__img">
               <img src={img1} alt="" />
             </div>
@@ -32,7 +32,9 @@ const Explore = () => {
                   <h5> {t("explore1.title")}</h5>
                   <p> {t("explore1.small")}</p>
                 </div>
-                <div className="explore__header-btn btn"> {t("explore")}</div>
+                <div className="explore__header-btn btn">
+                  <a href="#locations">{t("explore")}</a>
+                </div>
               </div>
               <p className="explore__body">{t("explore1.desc")}</p>
             </div>
@@ -47,7 +49,9 @@ const Explore = () => {
                   <h5> {t("explore2.title")}</h5>
                   <p> {t("explore2.small")}</p>
                 </div>
-                <div className="explore__header-btn btn"> {t("explore")}</div>
+                <div className="explore__header-btn btn">
+                  <a href="#locations">{t("explore")}</a>
+                </div>
               </div>
               <p className="explore__body">{t("explore2.desc")}</p>
             </div>
@@ -71,7 +75,9 @@ const Explore = () => {
                     <h5>{t("country1.title")}</h5>
                     <p>{t("country1.country")}</p>
                   </div>
-                  <div className="explore__header-btn btn">{t("explore")}</div>
+                  <div className="explore__header-btn btn">
+                    <a href="#locations">{t("explore")}</a>
+                  </div>
                 </div>
                 <p className="explore__body">{t("country1.desc")}</p>
                 <div className="explore__info-extra">
@@ -100,7 +106,9 @@ const Explore = () => {
                     <h5>{t("country2.title")}</h5>
                     <p>{t("country2.country")}</p>
                   </div>
-                  <div className="explore__header-btn btn">{t("explore")}</div>
+                  <div className="explore__header-btn btn">
+                    <a href="#locations">{t("explore")}</a>
+                  </div>
                 </div>
                 <p className="explore__body">{t("country2.desc")}</p>
                 <div className="explore__info-extra">
@@ -129,7 +137,9 @@ const Explore = () => {
                     <h5>{t("country3.title")}</h5>
                     <p>{t("country3.country")}</p>
                   </div>
-                  <div className="explore__header-btn btn">{t("explore")}</div>
+                  <div className="explore__header-btn btn">
+                    <a href="#locations">{t("explore")}</a>
+                  </div>
                 </div>
                 <p className="explore__body">{t("country3.desc")}</p>
                 <div className="explore__info-extra">
@@ -158,7 +168,9 @@ const Explore = () => {
                     <h5>{t("country4.title")}</h5>
                     <p>{t("country4.country")}</p>
                   </div>
-                  <div className="explore__header-btn btn">{t("explore")}</div>
+                  <div className="explore__header-btn btn">
+                    <a href="#locations">{t("explore")}</a>
+                  </div>
                 </div>
                 <p className="explore__body">{t("country4.desc")}</p>
                 <div className="explore__info-extra">

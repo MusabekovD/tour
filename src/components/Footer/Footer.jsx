@@ -12,12 +12,10 @@ const Footer = () => {
         <div className="footer__content">
           <div className="footer__text">
             <h5 className="footer__text-title">{t("footer_title")}</h5>
-            <p className="footer__text-subtitle">
-            {t("footer_desc")}
-            </p>
+            <p className="footer__text-subtitle">{t("footer_desc")}</p>
           </div>
           <div className="footer__btn btn">
-            <a href="#">{t("footer_btn")}</a>
+            <a href="#contacts">{t("footer_btn")}</a>
           </div>
         </div>
       </div>

@@ -15,7 +15,9 @@ const Discover = () => {
           <div className="discover__content">
             <p className="discover__subtitle">{t("book_desc")}</p>
             <h2 className="discover__title">{t("book_title")}</h2>
-            <button className="discover__btn btn">{t("book_discover")}</button>
+            <button className="discover__btn btn">
+            <a href="#contacts">{t("book_discover")}</a>
+            </button>
           </div>
         </div>
       </div>

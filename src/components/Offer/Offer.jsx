@@ -98,7 +98,7 @@ const Offer = () => {
                           {t("card1.building")}
                         </div>
                         <div className="offer__body-btn btn">
-                          {t("reserve")}
+                          <a href="#contacts">{t("reserve")}</a>
                         </div>
                       </div>
                     </div>
@@ -135,7 +135,7 @@ const Offer = () => {
                           {t("card2.building")}
                         </div>
                         <div className="offer__body-btn btn">
-                          {t("reserve")}
+                          <a href="#contacts">{t("reserve")}</a>
                         </div>
                       </div>
                     </div>
@@ -158,11 +158,9 @@ const Offer = () => {
                       <div className="offer__slide-body">
                         <h6 className="offer__body-title">{t("deal")}</h6>
                         <div className="offer__body-icon flex">
-                          {" "}
                           <FaCar /> {t("card3.car")}
                         </div>
                         <div className="offer__body-icon flex">
-                          {" "}
                           <SiEthiopianairlines />
                           {t("card3.plane")}
                         </div>
@@ -171,7 +169,7 @@ const Offer = () => {
                           {t("card3.building")}
                         </div>
                         <div className="offer__body-btn btn">
-                          {t("reserve")}
+                          <a href="#contacts">{t("reserve")}</a>
                         </div>
                       </div>
                     </div>
@@ -194,11 +192,9 @@ const Offer = () => {
                       <div className="offer__slide-body">
                         <h6 className="offer__body-title">{t("deal")}</h6>
                         <div className="offer__body-icon flex">
-                          {" "}
                           <FaCar /> {t("card4.car")}
                         </div>
                         <div className="offer__body-icon flex">
-                          {" "}
                           <SiEthiopianairlines />
                           {t("card4.plane")}
                         </div>
@@ -207,7 +203,7 @@ const Offer = () => {
                           {t("card4.building")}
                         </div>
                         <div className="offer__body-btn btn">
-                          {t("reserve")}
+                          <a href="#contacts">{t("reserve")}</a>
                         </div>
                       </div>
                     </div>
@@ -243,7 +239,7 @@ const Offer = () => {
                           {t("card5.building")}
                         </div>
                         <div className="offer__body-btn btn">
-                          {t("reserve")}
+                          <a href="#contacts">{t("reserve")}</a>
                         </div>
                       </div>
                     </div>
@@ -305,12 +301,12 @@ const Offer = () => {
               }}
             >
               <SwiperSlide>
-                <div className="offer__slider" >
+                <div className="offer__slider">
                   <div className="offer__slide">
                     <div className="offer__img">
                       <img src={oman} alt="" />
                     </div>
-                    <div className="offer__slide-info card__scale" >
+                    <div className="offer__slide-info card__scale">
                       <div className="offer__slide-header">
                         <div className="offer__slide-title">
                           {t("visa1.title")} <br />
@@ -333,7 +329,7 @@ const Offer = () => {
                           {t("card1.building")}
                         </div>
                         <div className="offer__body-btn btn">
-                          {t("reserve")}
+                          <a href="#contacts">{t("reserve")}</a>
                         </div>
                       </div>
                     </div>
@@ -369,7 +365,7 @@ const Offer = () => {
                           {t("card2.building")}
                         </div>
                         <div className="offer__body-btn btn">
-                          {t("reserve")}
+                          <a href="#contacts">{t("reserve")}</a>
                         </div>
                       </div>
                     </div>
@@ -405,7 +401,7 @@ const Offer = () => {
                           {t("card3.building")}
                         </div>
                         <div className="offer__body-btn btn">
-                          {t("reserve")}
+                          <a href="#contacts">{t("reserve")}</a>
                         </div>
                       </div>
                     </div>
@@ -441,7 +437,7 @@ const Offer = () => {
                           {t("card4.building")}
                         </div>
                         <div className="offer__body-btn btn">
-                          {t("reserve")}
+                          <a href="#contacts">{t("reserve")}</a>
                         </div>
                       </div>
                     </div>
@@ -477,7 +473,7 @@ const Offer = () => {
                           {t("card5.building")}
                         </div>
                         <div className="offer__body-btn btn">
-                          {t("reserve")}
+                          <a href="#contacts">{t("reserve")}</a>
                         </div>
                       </div>
                     </div>

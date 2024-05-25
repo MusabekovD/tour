@@ -16,7 +16,7 @@ const Test = () => {
   };
 
   return (
-    <div className="test container">
+    <div className="test container" id="locations">
       <div className="header__text">
         <h2 className="header__title">{t("location_title")}</h2>
         <p className="header__subtitle">
