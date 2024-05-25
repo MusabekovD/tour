@@ -5,7 +5,6 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  z-index: -1000;
   background-blend-mode: multiply;
   background-color: rgba(42, 42, 41, 0.5);
 }
@@ -44,7 +43,12 @@ transform: translate(-50%,-50%);
   font-size: 20px;
   color: #fff;
 }
-
+.hero__icons-hover:hover{
+  background-color: #22b3c1;
+  color: #fff;
+  transition: .3s linear;
+  cursor: pointer;
+}
 .hero__text-title {
   font-size: 50px;
   color: #ffff;

@@ -13,6 +13,7 @@ body {
   font-size: 16px;
   -ms-text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased;
+  scroll-behavior: smooth;
 }
 
 .container {
@@ -99,6 +100,11 @@ li {
 }
 .card__scale:hover {
   transform: scale(1.1);
+}
+
+.hero__text-btn:hover {
+  background: #fff;
+  color: #22b3c1;
 }
 /*
  @media (max-width: 1200px) {

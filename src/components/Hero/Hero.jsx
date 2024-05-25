@@ -17,8 +17,6 @@ import "swiper/css/autoplay";
 import Typed from "typed.js";
 const Hero = () => {
   const { t, i18n } = useTranslation();
- 
-
 
   return (
     <>
@@ -39,11 +37,13 @@ const Hero = () => {
                 <div className="hero__text">
                   <p className="hero__text-subtitle">{t("hero_desc")}</p>
                   <h2 className="hero__text-title">{t("hero_title_first")}</h2>
-                  <div className="hero__text-btn btn">{t("go_there")}</div>
+                  <button className="btn hero__text-btn ">
+                    <a href="#about">{t("go_there")}</a>
+                  </button>
                 </div>
                 <div className="hero__info">
                   <div className="hero__population hero__info-flex">
-                    <div className="hero__icon">
+                    <div className="hero__icon hero__icons-hover">
                       <a href="#">
                         <FaUser />
                       </a>
@@ -53,7 +53,7 @@ const Hero = () => {
                     </div>
                   </div>
                   <div className="hero__territory hero__info-flex">
-                    <div className="hero__icon">
+                    <div className="hero__icon hero__icons-hover">
                       <a href="#">
                         <FaEarthAfrica />
                       </a>
@@ -63,7 +63,7 @@ const Hero = () => {
                     </div>
                   </div>
                   <div className="hero__price hero__info-flex">
-                    <div className="hero__icon">
+                    <div className="hero__icon hero__icons-hover">
                       <a href="#">
                         <IoMdHome />
                       </a>
@@ -72,7 +72,9 @@ const Hero = () => {
                       {t("price")} <br /> <span>$1.100.200 </span>
                     </div>
                   </div>
-                  <div className="btn"> {t("explore")}</div>
+                  <div className="btn">
+                    <a href="#about">{t("explore")}</a>
+                  </div>
                 </div>
               </div>
             </div>
@@ -85,11 +87,13 @@ const Hero = () => {
                 <div className="hero__text">
                   <p className="hero__text-subtitle">{t("hero_desc")}</p>
                   <h2 className="hero__text-title">{t("hero_title_second")}</h2>
-                  <div className="hero__text-btn btn">{t("go_there")}</div>
+                  <div className="hero__text-btn btn">
+                    <a href="#about">{t("about")}</a>
+                  </div>
                 </div>
                 <div className="hero__info">
                   <div className="hero__population hero__info-flex">
-                    <div className="hero__icon">
+                    <div className="hero__icon hero__icons-hover">
                       <a href="#">
                         <FaUser />
                       </a>
@@ -99,7 +103,7 @@ const Hero = () => {
                     </div>
                   </div>
                   <div className="hero__territory hero__info-flex">
-                    <div className="hero__icon">
+                    <div className="hero__icon hero__icons-hover">
                       <a href="#">
                         <FaEarthAfrica />
                       </a>
@@ -109,7 +113,7 @@ const Hero = () => {
                     </div>
                   </div>
                   <div className="hero__price hero__info-flex">
-                    <div className="hero__icon">
+                    <div className="hero__icon hero__icons-hover">
                       <a href="#">
                         <IoMdHome />
                       </a>
@@ -118,7 +122,9 @@ const Hero = () => {
                       {t("price")} <br /> <span>$1.100.200 </span>
                     </div>
                   </div>
-                  <div className="btn">{t("explore")}</div>
+                  <div className="btn">
+                    <a href="#about">{t("explore")}</a>
+                  </div>
                 </div>
               </div>
             </div>
@@ -137,22 +143,24 @@ const Hero = () => {
                 <div className="hero__text">
                   <p className="hero__text-subtitle">{t("hero_desc")}</p>
                   <h2 className="hero__text-title"> {t("hero_title_third")}</h2>
-                  <div className="hero__text-btn btn">{t("go_there")}</div>
+                  <div className="hero__text-btn btn">
+                    <a href="#about">{t("about")}</a>
+                  </div>
                 </div>
                 <div className="hero__info">
                   <div className="hero__population hero__info-flex">
-                    <div className="hero__icon">
+                    <div className="hero__icon hero__icons-hover">
                       <a href="#">
                         <FaUser />
                       </a>
                     </div>
                     <div className="hero__txt">
-                      {t("population")} <br />{" "}
+                      {t("population")} <br />
                       <span className="hero__txt-span">8.66 M</span>
                     </div>
                   </div>
                   <div className="hero__territory hero__info-flex">
-                    <div className="hero__icon">
+                    <div className="hero__icon hero__icons-hover">
                       <a href="#">
                         <FaEarthAfrica />
                       </a>
@@ -162,7 +170,7 @@ const Hero = () => {
                     </div>
                   </div>
                   <div className="hero__price hero__info-flex">
-                    <div className="hero__icon">
+                    <div className="hero__icon hero__icons-hover">
                       <a href="#">
                         <IoMdHome />
                       </a>
@@ -171,7 +179,9 @@ const Hero = () => {
                       {t("price")} <br /> <span>$1.100.200 </span>
                     </div>
                   </div>
-                  <div className="btn"> {t("explore")}</div>
+                  <div className="btn">
+                    <a href="#about">{t("explore")}</a>
+                  </div>
                 </div>
               </div>
             </div>
