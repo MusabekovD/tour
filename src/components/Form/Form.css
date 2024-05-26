@@ -47,17 +47,17 @@
 .selector .form-select {
   padding: 20px 30px;
   background-color: #fff;
-  border: 1px solid #e0e0e0;
 }
 .form-select {
   width: 100%;
   padding: 20px 30px;
   background-color: transparent;
   border-radius: 23px;
-  border: 1px solid #e0e0e0;
   padding: 0px 20px;
   cursor: pointer;
   align-self: flex-start;
+  border: none;
+  outline: none;
 }
 
 .form__wrapper-2 {
@@ -72,7 +72,6 @@
 .form__wrapper-2 .form-select {
   padding: 20px 30px;
   background-color: #fff;
-  border: 1px solid #e0e0e0;
 }
 .form__wrapper-2 .selector {
   width: 90%;

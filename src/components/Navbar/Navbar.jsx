@@ -5,13 +5,13 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import { FaTelegramPlane } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { MdOutlineClose } from "react-icons/md";
-import Explore from "../Explore/Explore"
-import { useTranslation } from "react-i18next"; 
+import Explore from "../Explore/Explore";
+import { useTranslation } from "react-i18next";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
-  const { t, i18n } = useTranslation(); 
+  const { t, i18n } = useTranslation();
 
   const handleChangeLanguage = (event) => {
     i18n.changeLanguage(event.target.innerText.toLowerCase());
@@ -19,7 +19,9 @@ const Navbar = () => {
   const toggleNavbar = () => {
     setIsOpen(!isOpen);
   };
-
+  const closeNavbar = () => {
+    setIsOpen(false);
+  };
   return (
     <div className="navbar">
       <div className="container">
@@ -30,16 +32,16 @@ const Navbar = () => {
             </a>
           </div>
           <ul className="nav__list">
-            <li className="nav__list-item">
+            <li className="nav__list-item" >
               <a href="/">{t("home")}</a>
             </li>
-            <li className="nav__list-item">
+            <li className="nav__list-item" >
               <a href="#about">{t("about")}</a>
             </li>
-            <li className="nav__list-item">
+            <li className="nav__list-item" >
               <a href="#offer">{t("tour")}</a>
             </li>
-            <li className="nav__list-item">
+            <li className="nav__list-item" >
               <a href="#contacts">{t("contacts")}</a>
             </li>
           </ul>
@@ -72,26 +74,32 @@ const Navbar = () => {
           </div>
           <div className={`mobileNavbar ${isOpen ? "active" : ""} `}>
             <ul className="mobileNavbar__list">
-              <li className="mobileNavbar__list-item">
-                <a href="#">{t("home")}</a>
+              <li className="mobileNavbar__list-item" onClick={closeNavbar}>
+                <a href="/">{t("home")}</a>
               </li>
-              <li className="mobileNavbar__list-item">
-                <a href="#">{t("about")}</a>
+              <li className="mobileNavbar__list-item" onClick={closeNavbar}>
+                <a href="#about">{t("about")}</a>
               </li>
-              <li className="mobileNavbar__list-item">
-                <a href="#">{t("tour")}</a>
+              <li className="mobileNavbar__list-item" onClick={closeNavbar}>
+                <a href="#offer">{t("tour")}</a>
               </li>
-              <li className="mobileNavbar__list-item">
-                <a href="#">{t("contacts")}</a>
+              <li className="mobileNavbar__list-item" onClick={closeNavbar}>
+                <a href="#contacts">{t("contacts")}</a>
               </li>
-              <li className="mobileNavbar__list-item">
-                <a onClick={handleChangeLanguage} href="#">Uz</a>
+              <li className="mobileNavbar__list-item" onClick={closeNavbar}>
+                <a onClick={handleChangeLanguage} href="#">
+                  Uz
+                </a>
               </li>
-              <li className="mobileNavbar__list-item">
-                <a onClick={handleChangeLanguage} href="#">Eng</a>
+              <li className="mobileNavbar__list-item" onClick={closeNavbar}>
+                <a onClick={handleChangeLanguage} href="#">
+                  Eng
+                </a>
               </li>
-              <li className="mobileNavbar__list-item">
-                <a onClick={handleChangeLanguage} href="#">Ru</a>
+              <li className="mobileNavbar__list-item" onClick={closeNavbar}>
+                <a onClick={handleChangeLanguage} href="#">
+                  Ru
+                </a>
               </li>
               <li className="mobileNavbar__list-item">
                 <FaTelegramPlane className="social_icon" />

@@ -51,6 +51,7 @@
   }
 }
 @media (max-width: 768px) {
+  
   .hero__info {
     margin-top: -30px;
     padding: 10px 10px;
@@ -72,9 +73,7 @@
   }
 }
 @media (max-width: 450px) {
-  .hero{
-    height: 100vh;
-  }
+
   .hero__info {
     background-color: rgb(255, 255, 255, 0.2);
     padding: 30px 10px;

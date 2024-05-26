@@ -21,14 +21,19 @@
 }
 @media (max-width: 768px) {
   .offer .container {
-    max-width: 600px ;
+    max-width: 600px;
     margin: 0 auto;
   }
 
   .offer__slide {
     padding: 20px 0;
     width: 90%;
-
+  }
+  .offer .header__text {
+    padding: 25px;
+  }
+  .offer__slide {
+    padding: 30px 0;
   }
   .offer__img {
     width: 100%;
@@ -54,8 +59,10 @@
     font-size: 20px;
   }
 }
-
 @media (max-width: 450px) {
+  .offer .header__text {
+    padding: 15px;
+  }
   .offer__slide {
     padding: 20px 0;
   }
@@ -70,5 +77,6 @@
   .header__title {
     line-height: 20px;
     font-size: 20px;
+    text-align: center;
   }
 }

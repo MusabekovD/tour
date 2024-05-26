@@ -48,11 +48,15 @@
   
 }
 @media (max-width: 450px) {
+  .discover__content {
+    padding: 20px;
+  }
   .discover__title {
     font-size: 20px;
   }
   .discover__subtitle {
     font-size: 16px;
+    text-align: center;
   }
   .discover__btn {
     font-size: 12px;
